@@ -2,5 +2,8 @@
     "cSpell.words": [
         "YMAL",
         "Vendure"
+    ],
+    "i18n-ally.localesPaths": [
+        "public/locales"
     ]
 }
