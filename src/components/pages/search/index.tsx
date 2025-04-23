@@ -35,8 +35,7 @@ export const SearchPage: React.FC<InferGetServerSidePropsType<typeof getServerSi
         <Layout
             categories={props.collections}
             navigation={props.navigation}
-            pageTitle={t('search-results') + ' ' + searchPhrase}
-        >
+            pageTitle={t('search-results') + ' ' + searchPhrase}>
             <ContentContainer>
                 <AnimatePresence>
                     {filtersOpen && (
@@ -45,15 +44,13 @@ export const SearchPage: React.FC<InferGetServerSidePropsType<typeof getServerSi
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            transition={{ duration: 0.2, ease: 'easeInOut' }}
-                        >
+                            transition={{ duration: 0.2, ease: 'easeInOut' }}>
                             <FacetsFilters
                                 onClick={e => e.stopPropagation()}
                                 initial={{ translateX: '-100%' }}
                                 animate={{ translateX: '0%' }}
                                 exit={{ translateX: '-100%' }}
-                                transition={{ duration: 0.3, ease: 'easeInOut' }}
-                            >
+                                transition={{ duration: 0.3, ease: 'easeInOut' }}>
                                 <Stack column>
                                     <Stack justifyBetween itemsCenter>
                                         <TP weight={400} upperCase>

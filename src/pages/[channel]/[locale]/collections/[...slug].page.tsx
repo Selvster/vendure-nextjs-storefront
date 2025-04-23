@@ -6,6 +6,6 @@ import { InferGetStaticPropsType } from 'next';
 import React from 'react';
 
 const Page: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = props => <CollectionPage {...props} />;
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic'
 export { getStaticPaths, getStaticProps };
 export default Page;

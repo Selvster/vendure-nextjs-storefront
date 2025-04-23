@@ -22,8 +22,7 @@ export function Select<T extends string | number>({
                 placeholder={t('select-category')}
                 onChange={e => {
                     setValue(e.target.value as T);
-                }}
-            >
+                }}>
                 <option value="" disabled>
                     Select your option
                 </option>

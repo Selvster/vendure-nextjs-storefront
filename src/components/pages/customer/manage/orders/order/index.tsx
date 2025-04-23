@@ -30,8 +30,7 @@ export const OrderPage: React.FC<InferGetServerSidePropsType<typeof getServerSid
         <Layout
             categories={props.collections}
             navigation={props.navigation}
-            pageTitle={`${t('orderPage.title')} #${order?.code}`}
-        >
+            pageTitle={`${t('orderPage.title')} #${order?.code}`}>
             <ContentContainer>
                 <Stack w100 justifyEnd>
                     <CustomerNavigation />
