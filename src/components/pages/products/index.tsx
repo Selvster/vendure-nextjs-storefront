@@ -92,7 +92,8 @@ export const ProductPage: React.FC<InferGetStaticPropsType<typeof getStaticProps
                                                     color="subtitle"
                                                     upperCase
                                                     weight={500}
-                                                    style={{ letterSpacing: '0.5px' }}>
+                                                    style={{ letterSpacing: '0.5px' }}
+                                                >
                                                     {c.name}
                                                 </TP>
                                             </CategoryBlock>
@@ -125,7 +126,8 @@ export const ProductPage: React.FC<InferGetStaticPropsType<typeof getStaticProps
                                     comingSoon={!variant}
                                     outOfStock={Number(variant?.stockLevel) <= 0}
                                     itemsCenter
-                                    gap="0.25rem">
+                                    gap="0.25rem"
+                                >
                                     {!variant ? null : Number(variant.stockLevel) > 0 ? (
                                         <Check size="1.75rem" />
                                     ) : (
@@ -146,12 +148,14 @@ export const ProductPage: React.FC<InferGetStaticPropsType<typeof getStaticProps
                                 <Stack w100 gap="2.5rem" justifyBetween column>
                                     <FullWidthButton
                                         style={{ textTransform: 'uppercase', padding: '1.5rem' }}
-                                        onClick={handleAddToCart}>
+                                        onClick={handleAddToCart}
+                                    >
                                         {t('add-to-cart')}
                                     </FullWidthButton>
                                     <FullWidthSecondaryButton
                                         style={{ textTransform: 'uppercase', padding: '1.5rem' }}
-                                        onClick={handleBuyNow}>
+                                        onClick={handleBuyNow}
+                                    >
                                         {t('buy-now')}
                                     </FullWidthSecondaryButton>
                                 </Stack>
