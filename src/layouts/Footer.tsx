@@ -13,6 +13,8 @@ export const Footer: React.FC<{
 
     const footerLaw = t('footer.law', { returnObjects: true });
 
+    
+
     return (
         <Wrapper>
             <Main>
@@ -56,7 +58,7 @@ export const Footer: React.FC<{
                     </Container>
                 </ContentContainer>
             </Main>
-            <LawsWrapper>
+            {/* <LawsWrapper>
                 <ContentContainer>
                     <Stack justifyBetween itemsCenter>
                         <Laws>
@@ -69,14 +71,14 @@ export const Footer: React.FC<{
                         <Socials />
                     </Stack>
                 </ContentContainer>
-            </LawsWrapper>
-            <LinkBar>
+            </LawsWrapper> */}
+            {/* <LinkBar>
                 <Link href="https://aexol.com/" external>
                     <p>
                         Made by <strong>Aexol</strong>
                     </p>
                 </Link>
-            </LinkBar>
+            </LinkBar> */}
         </Wrapper>
     );
 };

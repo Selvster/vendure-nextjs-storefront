@@ -18,9 +18,8 @@ export const scalars = ZeusScalars({
     },
 });
 
-//use 'http://localhost:3000/shop-api/' in local .env file for localhost development and provide env to use on prod/dev envs
 
-export const VENDURE_HOST = `https://hostile-clarie-selvster-30c79235.koyeb.app/shop-api`;
+export const VENDURE_HOST = `${process.env.NEXT_PUBLIC_HOST}/shop-api`;
 
 const apiFetchVendure =
     (options: fetchOptions) =>
