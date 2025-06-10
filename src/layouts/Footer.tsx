@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 import { useTranslation } from 'next-i18next';
 
 import { Stack, TypoGraphy, Link, NotifyFooterForm, ContentContainer } from '@/src/components/atoms';
-import { Socials } from '@/src/components/atoms/Socials';
 import { NavigationType } from '@/src/graphql/selectors';
 import { RootNode } from '@/src/util/arrayToTree';
 
@@ -11,7 +10,6 @@ export const Footer: React.FC<{
 }> = ({ navigation }) => {
     const { t } = useTranslation('common');
 
-    const footerLaw = t('footer.law', { returnObjects: true });
 
     
 
@@ -133,30 +131,6 @@ const FooterSections = styled(Stack)`
         gap: 14rem;
     }
 `;
-const LawsWrapper = styled(Stack)`
-    background: ${({ theme }) => theme.background.third};
-    padding: 3rem 0;
-`;
 
-const Laws = styled(Stack)`
-    gap: 1.5rem;
-    @media (min-width: ${p => p.theme.breakpoints.ssm}) {
-        gap: 5rem;
-    }
-`;
-const LinkBar = styled.div`
-    width: 100%;
-    height: fit-content;
-    background-color: ${({ theme }) => theme.background.third};
-    display: flex;
-    justify-content: center;
-    user-select: none;
-    & p {
-        font-size: 1rem;
-    }
-    & strong {
-        text-transform: uppercase;
-        font-weight: 900;
-        color: gray;
-    }
-`;
+
+
